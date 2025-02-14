@@ -5,6 +5,14 @@
 
     - name: Checking the hostnames
       shell: hostnamectl
+      register: hostname_out
+
+    - debug:
+        var: hostname_out
 
     - name: check the uptime
       shell: uptime
+      register: uptime_out
+
+    - debug:
+        var: uptime_out
