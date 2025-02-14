@@ -5,3 +5,6 @@
 
     - name: Checking the hostnames
       shell: hostnamectl
+
+    - name: check the uptime
+      shell: uptime
