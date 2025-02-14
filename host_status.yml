@@ -1,0 +1,7 @@
+---
+- name: Checking system health
+  hosts: all
+  tasks:
+
+    - name: Checking the hostnames
+      shell: hostnamectl
