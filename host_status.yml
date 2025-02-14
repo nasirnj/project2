@@ -17,5 +17,6 @@
     - debug:
         var: uptime_out
 
-
-
+    - user:
+        name: saran
+        state: present
